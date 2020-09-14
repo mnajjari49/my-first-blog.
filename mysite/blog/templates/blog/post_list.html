@@ -2,20 +2,16 @@
 <html>
     <body>
         
-        
-            <div>
-                <p>test</p>
-                  <p>test2</p> 
+        {% for post in posts %}
+            <div>  
+                <br>
+                <p>published :{{ post.published_date }}</p>
+                  <p>titre du post: {{ post.title }}</p> 
+                  <p>tect du poet: {{ post.text |linebreaksbr }}</p>
                </div>
-        
+           
+        {% endfor %}
             
-            
-            <div>
-                <p>test</p>
-                  <p>test2</p> 
-               </div>
-        
-        
         
         
     </body>
